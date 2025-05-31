@@ -1,0 +1,10 @@
+wp-smart-tag-generator-enhanced/
+├── wp-smart-tag-generator-enhanced.php          # Main plugin file (clean & focused)
+├── includes/
+│   ├── class-enhanced-deepseek-api.php         # DeepSeek API handler
+│   ├── class-enhanced-content-analyzer.php     # Content analysis logic  
+│   ├── class-taxonomy-manager.php              # Taxonomy & entity management
+│   └── class-bulk-processor.php                # Bulk processing system
+└── assets/
+    ├── css/admin-enhanced.css
+    └── js/admin-enhanced.js

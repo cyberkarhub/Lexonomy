@@ -1,0 +1,307 @@
+/**
+ * Enhanced Admin CSS
+ * 
+ * @package WP_Smart_Tag_Generator_Enhanced
+ * @since 3.1.0
+ */
+
+/* Meta Box Styles */
+#wstg-content-analyzer { 
+    padding: 10px 0; 
+    font-size: 13px; 
+}
+
+.wstg-status-indicator { 
+    padding: 10px; 
+    background: #f8f9fa; 
+    border-radius: 4px; 
+    margin-bottom: 15px; 
+    border-left: 4px solid #0073aa;
+}
+
+.wstg-analysis-summary { 
+    background: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    padding: 10px; 
+}
+
+.analysis-item { 
+    display: flex; 
+    align-items: center; 
+    margin: 5px 0; 
+}
+
+.analysis-label { 
+    font-weight: bold; 
+    min-width: 80px; 
+}
+
+.analysis-count { 
+    background: #0073aa; 
+    color: white; 
+    border-radius: 10px; 
+    padding: 2px 8px; 
+    font-size: 11px; 
+    margin: 0 8px; 
+}
+
+.analysis-item small { 
+    color: #666; 
+    font-size: 11px; 
+}
+
+.wstg-checkboxes label { 
+    display: block; 
+    margin: 8px 0; 
+    cursor: pointer; 
+}
+
+.wstg-checkboxes small { 
+    color: #666; 
+    font-style: italic; 
+}
+
+.wstg-analysis-mode { 
+    border-top: 1px solid #eee; 
+    padding-top: 10px; 
+}
+
+.wstg-progress-bar { 
+    width: 100%; 
+    height: 6px; 
+    background: #f0f0f0; 
+    border-radius: 3px; 
+    margin: 10px 0; 
+    overflow: hidden; 
+}
+
+.wstg-progress-fill { 
+    height: 100%; 
+    background: linear-gradient(90deg, #0073aa, #005177); 
+    border-radius: 3px; 
+    width: 0; 
+    transition: width 0.3s ease; 
+}
+
+.wstg-progress-text { 
+    text-align: center; 
+    font-size: 12px; 
+    font-weight: bold; 
+    margin-top: 5px;
+}
+
+#wstg-results { 
+    margin-top: 15px; 
+    padding: 15px; 
+    background: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+}
+
+#wstg-results h4 { 
+    margin: 0 0 10px 0; 
+    color: #333; 
+}
+
+#wstg-tag-list, #wstg-entities-list { 
+    margin: 10px 0; 
+}
+
+.wstg-tag { 
+    display: inline-block; 
+    margin: 3px; 
+    padding: 4px 8px; 
+    background: #e1f5fe; 
+    border: 1px solid #b3e5fc; 
+    border-radius: 12px; 
+    font-size: 11px; 
+}
+
+.wstg-entity { 
+    display: inline-block; 
+    margin: 3px; 
+    padding: 4px 8px; 
+    background: #f3e5f5; 
+    border: 1px solid #e1bee7; 
+    border-radius: 12px; 
+    font-size: 11px; 
+}
+
+.wstg-topical-item { 
+    margin: 8px 0; 
+    padding: 10px; 
+    background: #fff; 
+    border-left: 3px solid #0073aa; 
+    border-radius: 0 4px 4px 0;
+}
+
+.wstg-topical-title { 
+    font-weight: bold; 
+    margin-bottom: 5px; 
+    color: #333;
+}
+
+.wstg-subtopics {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.wstg-relevance {
+    font-size: 11px;
+    color: #888;
+    font-style: italic;
+}
+
+.wstg-analysis-info {
+    text-align: center;
+    padding: 5px;
+    background: #e3f2fd;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    color: #1976d2;
+}
+
+#wstg-actions .button { 
+    margin: 3px 5px 3px 0; 
+}
+
+#wstg-messages { 
+    margin: 10px 0; 
+}
+
+#wstg-messages .notice { 
+    margin: 5px 0; 
+    padding: 8px 12px; 
+}
+
+/* Settings Page Styles */
+.nav-tab-wrapper { 
+    margin-bottom: 20px; 
+}
+
+.tab-content { 
+    background: #fff; 
+    padding: 20px; 
+    border: 1px solid #ccd0d4; 
+    border-top: none; 
+}
+
+.nav-tab.nav-tab-active { 
+    background: #fff; 
+    border-bottom: 1px solid #fff; 
+}
+
+.form-table th { 
+    width: 220px; 
+}
+
+/* Responsive Design */
+@media (max-width: 782px) {
+    .wstg-analysis-summary {
+        font-size: 12px;
+    }
+    
+    .analysis-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .analysis-label {
+        min-width: auto;
+        margin-bottom: 5px;
+    }
+    
+    .wstg-tag, .wstg-entity {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .wstg-status-indicator {
+        background: #2c2c2c;
+        color: #fff;
+    }
+    
+    .wstg-analysis-summary {
+        background: #1e1e1e;
+        border-color: #444;
+        color: #fff;
+    }
+    
+    #wstg-results {
+        background: #1e1e1e;
+        border-color: #444;
+        color: #fff;
+    }
+    
+    .wstg-topical-item {
+        background: #2c2c2c;
+        color: #fff;
+    }
+}
+
+/* Animation enhancements */
+.wstg-tag, .wstg-entity {
+    transition: all 0.2s ease;
+}
+
+.wstg-tag:hover, .wstg-entity:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.wstg-topical-item {
+    transition: all 0.2s ease;
+}
+
+.wstg-topical-item:hover {
+    box-shadow: 0 2px 8px rgba(0,115,170,0.15);
+}
+
+/* Loading animations */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+#wstg-loading p {
+    animation: pulse 2s infinite;
+}
+
+/* Success and error state styling */
+.notice-success {
+    border-left-color: #46b450;
+    background: #f0fff0;
+}
+
+.notice-error {
+    border-left-color: #dc3232;
+    background: #fff0f0;
+}
+
+/* Orthodox-specific styling */
+.orthodox-entity {
+    background: #e8f5e8;
+    border-color: #4caf50;
+}
+
+.orthodox-entity::after {
+    content: " ☦️";
+    font-size: 10px;
+}
+
+.biblical-entity {
+    background: #fff3e0;
+    border-color: #ff9800;
+}
+
+.biblical-entity::after {
+    content: " 📖";
+    font-size: 10px;
+}
